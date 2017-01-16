@@ -1,0 +1,112 @@
+<loading hidden="{{loadingHidden}}">
+        加载中...
+</loading>
+
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{focusImages.list}}" wx:key="{{item}}">
+        <swiper-item>
+            <image src="{{item.pic}}" style="width:100%; height:100%;"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<!--猜你喜欢-->
+<view class='content-item'>
+    <view class="title-item">
+        <image src="../../images/mymusic_icon_allsongs_normal@2x.png" style="height:10px; width:10px; margin:0 8px;"></image>
+        <label>{{guess.title}}</label>
+    </view>
+
+    <view class="list-item">
+        <view class="list-itemcontent" wx:for="{{guess.list}}" wx:key="{{item}}">
+            <navigator url="../detail/detail?id={{item.albumId}}">
+            <view class="image-top"></view>
+                <image style="height:200rpx; width:200rpx" src="{{item.albumCoverUrl290}}"></image>
+            </navigator>
+            <view class="subtitle-top">
+                <text>{{item.nickname}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<!--xiaobiantuiju-->
+<view class='content-item'>
+    <view class="title-item">
+        <image src="../../images/mymusic_icon_allsongs_normal@2x.png" style="height:10px; width:10px; margin:0 8px;"></image>
+        <label>{{editorRecommendAlbums.title}}</label>
+    </view>
+
+    <view class="list-item">
+        <view class="list-itemcontent" wx:for="{{editorRecommendAlbums.list}}" wx:key="{{item}}">
+            <navigator url="../detail/detail?id={{item.albumId}}">
+            <view class="image-top"></view>
+                <image style="height:200rpx; width:200rpx" src="{{item.albumCoverUrl290}}"></image>
+            </navigator>
+            <view class="subtitle-top">
+                <text>{{item.nickname}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!--付费会员-->
+<view class='content-item'>
+    <view class="title-item">
+        <image src="../../images/mymusic_icon_allsongs_normal@2x.png" style="height:10px; width:10px; margin:0 8px;"></image>
+        <label>{{member.title}}</label>
+    </view>
+    <view class="list-item">
+        <view class="list-itemcontent" wx:for="{{member.list}}" wx:key="{{item}}">
+         <navigator url="../memberDetail/memberDetail?">
+            <image style="height:100px; width:100px" src="{{item.bannerUrl}}"></image>
+          </navigator>  
+            <view class="subtitle-top">
+                <text>{{item.title.length<9?item.title:"科学队长， 你耳边\n的科学家"}}</text>
+            </view>
+            <view class="subtitle-bottom">
+                <text>{{item.nickname}}</text>
+            </view>
+    </view>
+    </view>
+</view>
+<!--精品听单-->
+<view class='content-item'>
+    <navigator url="../memberDetail/memberDetail?id=fail">
+        <view class="title-item">
+        <image src="../../images/mymusic_icon_allsongs_normal@2x.png" style="height:10px; width:10px; margin:0 8px;"></image>
+        <label>{{specialColumn.title}}</label>
+    </view>
+    <view wx:for="{{specialColumn.list}}" wx:key="{{item}}" class="listview-row">
+        <view class="listview-row-item">
+            <view class="listview-row-left">
+                <image src="{{item.coverPath}}" style="height:100rpx; width:100rpx"></image>
+        </view>
+        <view class="listview-row-right">
+            <text>{{item.title}}</text>
+            <text style="color:#ccc">{{item.footnote}}</text>
+        </view>
+        </view>
+    </view>
+    </navigator>
+</view>
+
+
+
+<!--tingshanghai-->
+<view class='content-item'>
+    <view class="title-item">
+        <image src="../../images/mymusic_icon_allsongs_normal@2x.png" style="height:10px; width:10px; margin:0 8px;"></image>
+        <label>{{cityColumn.title}}</label>
+    </view>
+
+    <view class="list-item">
+        <view class="list-itemcontent" wx:for="{{cityColumn.list}}" wx:key="{{item}}">
+            <navigator url="../detail/detail?id={{item.albumId}}">
+            <view class="image-top"></view>
+                <image style="height:200rpx; width:200rpx" src="{{item.albumCoverUrl290}}"></image>
+            </navigator>
+            <view class="subtitle-top">
+                <text>{{item.nickname}}</text>
+            </view>
+        </view>
+    </view>
+</view>

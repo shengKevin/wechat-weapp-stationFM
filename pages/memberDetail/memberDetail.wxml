@@ -1,0 +1,4 @@
+<!--pages/memberDetail/memberDetail.wxml-->
+<text>{{title}}</text>
+<text>{{subtitle}}</text>
+<image style="width:100%; height:750px;" src="../../images/1.jpg"></image>

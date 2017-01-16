@@ -1,0 +1,17 @@
+.detail-top {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    background: white;
+}
+.top-image-left {
+    margin: 40rpx;
+}
+.top-text-right {
+    display: flex;
+    flex-direction: column;
+    font-size: 20rpx;
+     margin: 40rpx 0rpx;
+}
+

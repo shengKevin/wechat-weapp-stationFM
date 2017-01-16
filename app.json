@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/find/find",
+    "pages/detail/detail",
+    "pages/memberDetail/memberDetail",  
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#292929",
+    "navigationBarTitleText": "喜马拉雅",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "green",
+    "list": [{
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "./images/icon_normal.png",
+      "selectedIconPath": "./images/icon_pressed.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "我的",
+      "iconPath": "./images/icon_normal.png",
+      "selectedIconPath": "./images/icon_pressed.png"
+    }]
+  }
+}
