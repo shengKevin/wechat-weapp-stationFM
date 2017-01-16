@@ -6,10 +6,11 @@
 
 ### 项目截图:
 
-![Image text](https://raw.githubusercontent.com/shengKevin/wechat-weapp-station/master/WeiXin/wechat-weapp-station/images-folder/1.png)
-![Image text](https://raw.githubusercontent.com/shengKevin/wechat-weapp-station/master/WeiXin/wechat-weapp-station/images-folder/2.png)
-![Image text](https://raw.githubusercontent.com/shengKevin/wechat-weapp-station/master/WeiXin/wechat-weapp-station/images-folder/3.png)
-![Image text](https://raw.githubusercontent.com/shengKevin/wechat-weapp-station/master/WeiXin/wechat-weapp-station/images-folder/4.png)
+![Image text](https://raw.githubusercontent.com/shengKevin/wechat-weapp-stationFM/master/images-folder/4.png)
+![Image text](https://raw.githubusercontent.com/shengKevin/wechat-weapp-stationFM/master/images-folder/1.png)
+![Image text](https://raw.githubusercontent.com/shengKevin/wechat-weapp-stationFM/master/images-folder/2.png)
+![Image text](https://raw.githubusercontent.com/shengKevin/wechat-weapp-stationFM/master/images-folder/3.png)
+
 
 ### 开发环境：
 微信web开发者工具 v0.9.092300
